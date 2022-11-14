@@ -8,8 +8,10 @@
     <title>Never Loss | Plataforma de Operações</title>
     <link rel="shortcut icon" href="imagensnever/logoneverloss.png">
     
+    
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="menu.css">
+
     
     
     
@@ -17,21 +19,47 @@
 </head>
 <body>
 
+    <div class="maindiv">    
+
+    <div class="cadsdash">
+        <div class="cardbody">
+    <div class="wrapper">
+        <figure class="card">
+            <img src="./imagensnever/blazeimag.jpg" alt="house">
+        
 
 
+        <figcaption>
+            <br>
+            <h2 id="titlecard">Robô - Blaze</h2>
+            
+        </figcaption>
+        <button class="det-btn" onclick="viewDetalhe()">Plano</button>
+    </figure>
 
-    
-
-
-
-
-
-    
-  <div class="contentnever">
-    <div class="box"><h1 id="titleneverbox">NEVER LOSS</h1></div>
+    <div id="cardDetalhes" class="card-details">
+        <h2 class="card__type">Plano Blaze</h2>
+        <p class="card__price"><sup>R$</sup>599,97<sub>/Ano</sub></p>
+        <div class="card__feactures">
+            <p class="freacture">Robô</p>
+            <p class="freacture">Sinais Telegram</p>
+            <p class="freacture">Gerenciamento</p>
+            <p class="freacture">Suporte</p>
+        </div>
+        <button class="buy-btn">Comprar</button>
     </div>
 
-    <div class="navegation-main">
+    </div>
+    </div>
+
+    </div>
+
+
+
+    
+  
+    <div class="sidebaricon">
+    <div class="navegation-main" >
      <div class="navegation">
             <ul>
                 <li class="list active">
@@ -77,9 +105,14 @@
                 <div class="indicator"></div>
             </ul>
         </div>
+    </div>
+    </div>
+</div>
 
 
 
+
+    
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -206,6 +239,17 @@
                     }
                 });
 
+
+
+                function viewDetalhe(){
+                    $('#cardDetalhes').addClass('open');
+                }
+
+
+
+        
+                
+
     </script>
 
 
@@ -214,5 +258,9 @@
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 </body>
 </html>
