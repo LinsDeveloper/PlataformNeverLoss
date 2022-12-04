@@ -53,7 +53,7 @@ var WebService = (function(){
                 console.log("Deu problema no retorno do WebService");
             }
 
-        }).cath((e)=>{
+        }).catch((e)=>{
            console.log("Retorno Inválido do Servidor");
            console.log(e);  
         });

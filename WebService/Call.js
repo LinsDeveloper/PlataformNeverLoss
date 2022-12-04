@@ -5,13 +5,18 @@ $(document).ready(function(){
         
 
         var obj = {};
-        var toUrl = "http://httpbin.org/json";
-        var method = "GET";
+        var toUrl = "https://virtserver.swaggerhub.com/LinsDeveloper/NeverLoss/1.0.0/inventory";
+        var method = "POST";
 
         WebService.Init(obj,toUrl,CallBack,method)
-
-    });
+        
+     
 });
+
+});
+
+
+
 
 
 
