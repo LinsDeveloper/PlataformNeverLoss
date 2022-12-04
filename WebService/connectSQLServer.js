@@ -18,9 +18,9 @@ sequelize.query('EXEC BuscarUsuario @id=:id, @Nome=:Nome, @NomeDaMae=:NomeDaMae'
     {
     replacements:
     {
-        id: 10,
-        Nome: 'Mario',
-        NomeDaMae: 'Lanna'
+        id: 12,
+        Nome: 'Rebecca',
+        NomeDaMae: 'Andreza'
         },
         type: sequelize.QueryTypes.EXEC
     }).then(function(result){
