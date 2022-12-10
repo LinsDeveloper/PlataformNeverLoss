@@ -30,4 +30,4 @@ sequelize.query('EXEC BuscarUsuario @id=:id, @Nome=:Nome, @NomeDaMae=:NomeDaMae'
         var data = JSON.parse(dados[0].usuarios);
         console.log(data);
         
-    }}).catch(console.log("oi"));
+    }}).catch(function(err){console.log(err)});
