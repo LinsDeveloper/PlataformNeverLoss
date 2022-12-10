@@ -18,14 +18,16 @@ sequelize.query('EXEC BuscarUsuario @id=:id, @Nome=:Nome, @NomeDaMae=:NomeDaMae'
     {
     replacements:
     {
-        id: 12,
-        Nome: 'Rebecca',
-        NomeDaMae: 'Andreza'
+        id: 68,
+        Nome: 'maiara',
+        NomeDaMae: 'Carlone'
         },
         type: sequelize.QueryTypes.EXEC
     }).then(function(result){
     if (result)
     {
-        console.log("\nInside result : " + JSON.stringify(result));
+        var dados = result[0];
+        var data = JSON.parse(dados[0].usuarios);
+        console.log(data);
         
-    }}).catch(function(err){console.log(err)})
+    }}).catch(console.log("oi"));
