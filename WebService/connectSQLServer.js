@@ -18,7 +18,7 @@ sequelize.query('EXEC BuscarUsuario @id=:id, @Nome=:Nome, @NomeDaMae=:NomeDaMae'
     {
     replacements:
     {
-        id: 68,
+        id: 70,
         Nome: 'maiara',
         NomeDaMae: 'Carlone'
         },
