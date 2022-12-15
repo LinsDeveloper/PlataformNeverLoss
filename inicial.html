@@ -8,7 +8,10 @@
     <title>Never Loss | Plataforma de Operações</title>
     <link rel="shortcut icon" href="imagensnever/logoneverloss.png">
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/node_modules/bootstrap/scss/bootstrap.scss">
     
+
     
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="menu.css">
@@ -16,97 +19,123 @@
     
     
 </head>
-<body>
-
-    <div class="maindiv">    
-
-    <div class="cadsdash" >
-        <div class="cardbody">
-    <div class="wrapper">
-        <figure class="card">
-            <img src="./imagensnever/blazeimag.jpg" alt="house">
-        
-
-
-        <figcaption>
-            <br>
-            <h2 id="titlecard">Robô - Blaze</h2>
-            
-        </figcaption>
-        <button class="det-btn" onclick="viewDetalhe()">Plano</button>
-    </figure>
-
-    <div id="cardDetalhes" class="card-details">
-        <h2 class="card__type">Plano Blaze</h2>
-        <p class="card__price"><sup>R$</sup>599,97<sub>/Ano</sub></p>
-        <div class="card__feactures">
-            <p class="freacture">Robô</p>
-            <p class="freacture">Sinais Telegram</p>
-            <p class="freacture">Gerenciamento</p>
-            <p class="freacture">Suporte</p>
-        </div>
-        <button class="buy-btn">Comprar</button>
-    </div>
-
-    </div>
-    </div>
-
-    </div>
-
-
+<body class="bg">
 
     
-  
-    <div class="sidebaricon">
-    <div class="navegation-main" >
-     <div class="navegation">
-            <ul>
-                <li class="list active">
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="logo-instagram" class="iconrede"></ion-icon>
-                        </span>
-                        <span class="text">Instagram</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="https://www.youtube.com/watch?v=OMYxyE2XQOw&ab_channel=OConselho%7CFl%C3%A1vioAugusto">
-                        <span class="icon">
-                            <ion-icon name="logo-youtube" class="iconrede"></ion-icon>
-                        </span>
-                        <span class="text">Youtube</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="logo-whatsapp" class="iconrede"></ion-icon>
-                        </span>
-                        <span class="text">Whatsapp</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="logo-facebook" class="iconrede"></ion-icon>
-                        </span>
-                        <span class="text">facebook</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="mail-outline" class="iconrede"></ion-icon>
-                        </span>
-                        <span class="text">E-mail</span>
-                    </a>
-                </li>
-                <div class="indicator"></div>
-            </ul>
+   
+    <nav class="menuperfil">
+
+        <h4 style="margin-right: 36%; color: #FFF; font-size: 25px;">NEVER LOSS</h4>
+        
+        <img src="/imagensnever/blazeimag.jpg" class="user-pic" onclick="abrirMenuPerfil()">
+
+        
+
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="/imagensnever/blazeimag.jpg">
+                    <h2>Victor Ribeiro</h2>
+                </div>
+                <hr>
+
+                <a href="#" class="sub-menu-link">
+                    <img src="/imagensnever/blazeimag.jpg">
+                    <p>Editar Perfil</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="sub-menu-link">
+                    <img src="/imagensnever/blazeimag.jpg">
+                    <p>Config.</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="sub-menu-link">
+                    <img src="/imagensnever/blazeimag.jpg">
+                    <p>Suporte</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="sub-menu-link">
+                    <img src="/imagensnever/blazeimag.jpg">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
         </div>
+
+        
+    </nav>
+      
+            
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="sidebaricon">
+                <div class="navegation-main" >
+                    <div class="navegation">
+                        <ul>
+                            <li class="list active">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="logo-instagram" class="iconrede"></ion-icon>
+                                    </span>
+                                    <span class="text">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="https://www.youtube.com/watch?v=OMYxyE2XQOw&ab_channel=OConselho%7CFl%C3%A1vioAugusto">
+                                    <span class="icon">
+                                        <ion-icon name="logo-youtube" class="iconrede"></ion-icon>
+                                    </span>
+                                    <span class="text">Youtube</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="logo-whatsapp" class="iconrede"></ion-icon>
+                                    </span>
+                                    <span class="text">Whatsapp</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="logo-facebook" class="iconrede"></ion-icon>
+                                    </span>
+                                    <span class="text">facebook</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="mail-outline" class="iconrede"></ion-icon>
+                                    </span>
+                                    <span class="text">E-mail</span>
+                                </a>
+                            </li>
+                            <div class="indicator"></div>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+
+        </div>
+       </div>
+             
+        
+    
     </div>
-    </div>
-</div>
+  </div>
+ </div>
+  
+     
+  
+    
+
 
 
 
@@ -126,7 +155,7 @@
                 </div>
             </div>
 
-            <i class='bx bx-chevron-right toggle'></i>
+            <i class="toggle"></i>
         </header>
 
 
@@ -212,7 +241,7 @@
 
     <script>
         const body = document.querySelector('body'),
-        sidebar = body.querySelector('nav'),
+        sidebar = body.querySelector('.sidebar'),
         toggle = body.querySelector(".toggle"),
         searchBtn = body.querySelector(".search-box"),
         modeSwitch = body.querySelector(".toggle-switch"),
@@ -223,9 +252,7 @@
                     sidebar.classList.toggle("close");
                 })
 
-                searchBtn.addEventListener("click" , () =>{
-                    sidebar.classList.remove("close");
-                })
+                
 
                 modeSwitch.addEventListener("click" , () =>{
                     body.classList.toggle("dark");
@@ -245,11 +272,45 @@
                 }
 
 
+               
+
+                function abrirMenuPerfil(){
+
+                    $('#subMenu').addClass('open-menu');
+
+                }
+
+                
+
+               
+
 
         
                 
 
     </script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 6,
+          spaceBetween: 15,
+          slidesPerGroup: 6,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 
 
 
@@ -260,6 +321,7 @@
 <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/node_modules/bootstrap/js/src"></script>
 
 </body>
 </html>
