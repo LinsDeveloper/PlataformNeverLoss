@@ -3,6 +3,7 @@
     "bootstrap": "^5.2.3",
     "sequelize": "^6.26.0",
     "swiper": "^8.4.5",
-    "tedious": "^15.1.2"
+    "tedious": "^15.1.2",
+    "websocket": "^1.0.34"
   }
 }
