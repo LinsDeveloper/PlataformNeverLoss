@@ -42,14 +42,196 @@ body, html{
 }
 
 .bg{
-    background: 
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url(/imagensnever/nevermain.png);
+    background: url(/imagensnever/imagebackgroud.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
+/*Barra de Rolagem*/
+
+body::-webkit-scrollbar {
+    width: 17px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(251, 252, 253);        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #707070;   
+    border-radius: 20px;       
+    border: 3px solid rgb(250, 250, 252);  
+  }
+
+
+/*Nav superior perfil*/
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: #aceaff;
+    color: 525252;
+}
+
+.menuperfil{
+    width: 100%;
+    padding: 0px 2%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+
+}
+
+
+.user-pic{
+    position: relative;
+    top: 4px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s;
+    border: 0px solid transparent;
+    
+}
+
+.user-pic:hover{
+    border: 5px solid #2490d3;
+    border-radius: 50%;
+
+}
+
+.menuperfil nav ul{
+    width: 100%;
+    
+    text-align: right;
+
+}
+
+.menuperfil ul li{
+    display: inline-block;
+    list-style: none;
+    
+}
+
+.menuperfil ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    
+}
+
+
+/*Nav superior perfil - sub menu*/
+
+
+.sub-menu-wrap{
+    position:absolute;
+    top: 10%;
+    z-index:1000;
+    right: 1%;
+    width: 230px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    border-radius: 20px;
+    
+    
+    
+
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+    
+    
+    
+}
+
+
+.sub-menu{
+    background: rgb(223, 222, 222);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(13, 14, 14);
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info h2{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.user-info img{
+
+    width: 40px;
+    border-radius: 50px;
+    margin-right: 15px;
+
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+
+}
+
+.sub-menu-link p{
+    width: 100%;
+
+}
+
+.sub-menu-link img{
+    width: 40px;
+    background: #fffdfd;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+
+}
+
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+
+.sub-menu-link:hover p{
+    font-weight: 600;
+
+}
+
+
+
+
+/*Body*/
+
+
+
+/*Menu Lateral*/
 
 
 ::selection{
@@ -66,7 +248,7 @@ body.dark{
     --text-color: #ccc;
 }
 
-/* ===== Sidebar ===== */
+
  .sidebar{
     position: fixed;
     top: 0;
@@ -82,7 +264,7 @@ body.dark{
     width: 88px;
 }
 
-/* ===== Reusable code - Here ===== */
+
 .sidebar li{
     height: 50px;
     list-style: none;
@@ -365,116 +547,32 @@ body.dark .home .text{
 
 
 
-.navegation-main{
-    display: flex;
+/*Cards*/
+
+
+
+.div-centerbody{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, 250px);
     justify-content: center;
-    align-items: center;
-    
-    
-    
-   
+    justify-items: center;
+    padding: 30px;
 
 }
-
-
-.navegation{
-    
-    width: 370px;
-    height: 55px;
-    background-color: #fff;
-    position:absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    margin-top: 8%;
-   
-    
-    
-
-}
-
-.navegation ul{
-    display: flex;
-    width: 300vh;
-}
-
-.navegation ul li
-{
-    position: relative;
-    list-style: none;
-    width: 73px;
-    height: 8vh;
-    z-index: 1;
-}
-
-.navegation ul li a
-{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    
-}
-
-.navegation ul li a .icon
-{
-    position: relative;
-    display: block;
-    line-height: 10vh;
-    font-size: 25px;
-    text-align: center;
-    transition: 0.5s;
-    color: var(--clr);
-}
-
-
-
-.navegation ul li a .text
-{
-    position: absolute;
-    color: var(--clr);
-    font-weight: 400;
-    font-size: 0.75em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-
-
-
-
-.navegation ul li a .iconrede:hover
-{
-    transform: scale(1.6) rotate(25deg);
-    
-}
-
-
-
-
-
-
-    
-    
-    
-
 
 
 .wrapper {
 
-    width: 200px;
+    width: 240px;
     height: 350px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px 8px rgb(13, 14, 14);
     position: relative;
     overflow: hidden;
-    background-color: #fcfcfc;
+    background-color: #ffffff;
+    left: 10%;
+    bottom: 5%;
 
 }
 
@@ -482,7 +580,7 @@ body.dark .home .text{
 
 .card img{
     width: 100%;
-    height: 40%;
+    height: 200px;
     border-radius: 10px 10px 0 0;
 }
 
@@ -490,7 +588,9 @@ body.dark .home .text{
 #titlecard{
     text-align: center;
     font-size: 20px;
-    margin-bottom: 25%;
+    position: relative;
+    bottom: 15px;
+    
     
 }
 
@@ -515,10 +615,12 @@ body.dark .home .text{
 
 
 .det-btn{
-    display: block;
+    
+    position: relative;
     padding: 10px 30px;
     width: 80%;
-    margin: -30px auto;
+    left: 25px;
+    top: 10px;
     border: none;
     outline: none;
     font-size: 16px;
@@ -578,7 +680,7 @@ body.dark .home .text{
 }
 
 
-.card__price sub{
+.card__price sub{   
     transform: translateX(-15px);
     font-weight: normal;
     font-size: 16px;
@@ -617,54 +719,8 @@ body.dark .home .text{
 
 
 
-.swiper {
-    width: 100%;
-    position: relative;
-    padding-left: 9%;
-    
-    
-  }
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-
-
-    
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
