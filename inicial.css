@@ -131,7 +131,7 @@ body, html{
 
 .sub-menu-wrap{
     position:absolute;
-    top: 9%;
+    top: 60px;
     z-index:1000;
     right: 1%;
     width: 230px;
@@ -607,7 +607,7 @@ body.dark .home .text{
     line-height: 10%;
     font-size: 30px;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.9s;
     color: var(--clr);
     grid-template-columns: repeat(auto-fit);
 
