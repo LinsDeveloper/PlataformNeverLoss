@@ -50,6 +50,10 @@ body, html{
     
 }
 
+
+
+
+
 /*Barra de Rolagem*/
 
 body::-webkit-scrollbar {
@@ -260,10 +264,14 @@ body.dark{
     background: var(--sidebar-color);
     transition: var(--tran-05);
     z-index: 100;
+    
+    
 }
 .sidebar.close{
     width: 88px;
 }
+
+
 
 
 .sidebar li{
@@ -559,8 +567,11 @@ body.dark .home .text{
     justify-content: center;
     justify-items: center;
     padding: 30px;
+    
 
 }
+
+
 
 
 .wrapper {
