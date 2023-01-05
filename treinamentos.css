@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
 
 .bg{
     
-    background-color: #DDD;
+    background-color: rgb(219, 219, 219);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -83,6 +83,15 @@ body::-webkit-scrollbar {
     justify-content:space-between;
     
 
+}
+
+
+.titlenav{
+    display: flex;
+    position: relative;
+    left: 90px;
+    top: 10px;
+    color: #041666;
 }
 
 
@@ -547,19 +556,40 @@ body.dark .home .text{
 
 /*Card Conteudo*/
 
-.div-centerbody{
-    display: grid;
-    grid-gap: 0px;
-    grid-template-columns: repeat(auto-fit, 210px);
-    justify-content:center;
-    justify-items: center;
-    padding: 30px;
-    position: relative;
-    top: 10px;
+
+
+@media only screen and (max-width: 1314px) {
+    .div-centerbody {
+        
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(auto-fit, 600px);
+        justify-content: center;
+        justify-items: center;
+        padding: 30px;
+        position: relative;
+
     
+    }
+  }
 
-}
 
+  @media only screen and (min-width: 1315px) {
+    .div-centerbody {
+        
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(auto-fit, 350px);
+        justify-content: flex-end;
+        justify-items: end;
+        padding: 30px;
+        position: relative;
+        
+        
+        
+    
+    }
+  }
 
 
 
@@ -568,11 +598,12 @@ body.dark .home .text{
     width: 355px;
     height: 160px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 1px rgb(13, 14, 14);
+    box-shadow: 0px 0px 15px 7px rgb(45, 71, 216);
     position: relative;
     overflow: hidden;
     background-color: #ffffff;
-    left: 100%;
+    
+    
     
 
 }
@@ -580,14 +611,14 @@ body.dark .home .text{
 
 .cardlist-aula{
     width: 355px;
-    height: 600px;
+    height: 430px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 1px rgb(13, 14, 14);
+    box-shadow: 0px 0px 18px 7px rgb(45, 71, 216);
     position: relative;
     overflow: hidden;
     background-color: #ffffff;
-    left: 100%;
     top: 20px;
+    
 }
 
 
@@ -596,17 +627,210 @@ body.dark .home .text{
 
 .cardplay {
 
-    width: 800px;
-    height: 460px;
+    
+    width: 235%;
+    height: 75%;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 1px rgb(13, 14, 14);
+    box-shadow: 0px 0px 18px 5px rgb(45, 71, 216);
     position: relative;
     overflow: hidden;
-    left: -20%;
     background-color: #ffffff;
+    
     
 
 }
+
+iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}   
+
+
+
+.row-percent{
+    display: flex;
+    padding: 13px 13px;
+    justify-content: space-between;
+}
+
+
+.row-percent h1{
+    font-size: 15px;
+    color: #041666;
+}
+
+.row-percent span{
+    font-size: 15px;
+    color: #041666;
+}
+
+
+.barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.row-progressbar{
+    
+    width: 320px;
+    padding: 0px;
+    background-color: #767fa8ce;
+    border-radius: 10px;
+}
+
+
+.row-progressbar div{
+    height: 100%;
+    width: 69%;
+    padding: 4px;
+    background-color: #051b81;
+    border-radius: 10px;
+}
+
+.btn-progress{
+    display: flex;
+    width: 100%;
+    padding: 10px 10px;
+    justify-content: center;
+    
+    
+}
+
+.btn-progress button{
+    padding: 3px;
+    border-radius: 10px;
+    width: 100%;
+    border-color: #112a9b;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 15px;
+    font-weight: bold; 
+    color: #041666;
+
+}
+
+
+.btn-progress button:hover{
+    opacity: 0.6;
+   
+
+}
+
+
+.search{
+    display: flex;
+    padding: 0px 10px;
+    
+}
+
+.search input{
+    border-radius: 5px;
+    width: 88%;
+    height: 40px;
+    
+}
+
+
+.search input:focus{
+    outline: 0;
+}
+
+
+.search button{
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #051b81;
+    transition: 0.5s;
+
+}
+
+.search button:hover{
+    opacity: 0.8;
+}
+
+
+.search button ion-icon{
+    width: 50px;
+    height: 20px;
+    display: flex;
+    color: #FFF;
+}
+
+
+#pesquisa-aula{
+    border: none;
+    background-color: #75757549;
+    padding: 12px 16px 14px;
+    font-weight: bold;  
+    font-size: 15px;
+    border-radius: 10px 0px 0px 10px;
+    color: #041666;
+}
+
+
+#pesquisa-aula::placeholder {
+    font-size: 13px;
+    color: #041666;
+}
+
+
+.item-aula{
+    display: flex;
+    
+    
+}
+
+
+.item-aula-btn{
+    width: 100%;
+    display: flex;
+    font-size: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: solid 0.2px;
+    border-color: #b1b1b1;
+}
+
+
+
+.item-aula-btn ion-icon{
+    width: 15px;
+    height: 15px;
+    color: #041666;
+    
+}
+
+.item-aula-btn span{
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.item-aula-btn h1{
+    padding: 5px;
+    color: #041666;
+    
+    
+}
+
+
+
+
+
+
 
 
 
