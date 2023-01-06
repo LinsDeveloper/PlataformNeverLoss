@@ -42,7 +42,7 @@ body, html{
 }
 
 .bg{
-    background: url(/imagensnever/imagebackgroud.jfif);
+    background-color: rgb(219, 219, 219);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -555,6 +555,15 @@ body.dark .home .text{
 }
 
 
+.titlenav{
+    display: flex;
+    position: relative;
+    left: 90px;
+    top: 10px;
+    color: #041666;
+}
+
+
 
 /*Cards*/
 
@@ -566,7 +575,7 @@ body.dark .home .text{
     grid-template-columns: repeat(auto-fit, 250px);
     justify-content: center;
     justify-items: center;
-    padding: 30px;
+    padding: 45px;
     
 
 }
@@ -579,7 +588,7 @@ body.dark .home .text{
     width: 240px;
     height: 350px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 8px rgb(13, 14, 14);
+    box-shadow: 0px 0px 15px 7px rgb(45, 71, 216);
     position: relative;
     overflow: hidden;
     background-color: #ffffff;
