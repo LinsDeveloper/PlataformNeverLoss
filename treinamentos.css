@@ -82,6 +82,7 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content:space-between;
     
+    
 
 }
 
@@ -635,6 +636,7 @@ body.dark .home .text{
     position: relative;
     overflow: hidden;
     background-color: #ffffff;
+    left: 104%;
     
     
 
@@ -823,9 +825,38 @@ iframe{
     padding: 5px;
     color: #041666;
     
-    
 }
 
+
+
+.btn-finish{
+    border-radius: 15px;
+    border-color: #112a9b;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    height: 10%;
+    top: 78%;
+    right: 10%;
+    width: 55%;
+    color: #041666;
+}
+
+
+.btn-finish:hover{
+    background-color: #041666;
+    color: #FFF;
+}
+
+
+.btn-finish ion-icon{
+    font-size: 20px;
+    padding-right: 3%;
+    position: relative;
+    top: 4px;
+}
 
 
 
