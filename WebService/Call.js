@@ -1,15 +1,30 @@
+const express = require('express');
+const controllerProduto = require('./controllers/ws');
+
+
+
 $(document).ready(function(){
+
+
     var Executar = document.querySelector("#Executar");
 
     Executar.addEventListener("click", function(){
+
+        
         
 
-        var obj = {};
-        var toUrl = "https://virtserver.swaggerhub.com/LinsDeveloper/NeverLoss/1.0.0/inventory";
-        var method = "POST";
+        const routes = express.Router();
 
-        WebService.Init(obj,toUrl,CallBack,method)
-        
+
+
+        routes.get('./ws.js/BuscaUsuarios', controllerProduto.BuscaUsuarios);
+
+
+
+
+
+
+            module.exports = routes;
      
 });
 
@@ -23,5 +38,5 @@ $(document).ready(function(){
 var CallBack = function(resposta){
     var Resultado = document.querySelector("#Resultado");
 
-    Resultado.innerHTML = JSON.stringify(resposta.slideshow);
+    Resultado.innerHTML = JSON.stringify(resposta);
 }

@@ -1,3 +1,7 @@
+
+
+
+
 var WebService = (function(){
 
 
@@ -20,6 +24,10 @@ var WebService = (function(){
                     if (typeof(response) == "undefined"){
                         reject();
                     }
+
+                    
+
+
 
                     console.log("Sucess on request response to server! | WebService.js");
                     if (response.success){

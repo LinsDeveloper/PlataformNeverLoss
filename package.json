@@ -1,9 +1,32 @@
 {
   "dependencies": {
+    "body-parser": "^1.20.1",
     "bootstrap": "^5.2.3",
-    "sequelize": "^6.26.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "sequelize": "^6.28.0",
     "swiper": "^8.4.5",
     "tedious": "^15.1.2",
-    "websocket": "^1.0.34"
-  }
+    "websocket": "^1.0.34",
+    "msnodesqlv8": "^2.7.0",
+    "mssql": "^9.0.1",
+    "request": "^2.88.2",
+    "rest-mssql-nodejs": "^1.0.10",
+    "smn-sql": "^1.0.1"
+  },
+
+  "name": "plataformneverloss",
+  "description": "",
+  "version": "1.0.0",
+  "main": "neverloss.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node API_node/server.js",
+    "dev": "nodemon API_node/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

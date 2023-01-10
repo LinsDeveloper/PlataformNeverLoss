@@ -6,12 +6,17 @@ const sequelize = new Sequelize('db_neverloss','sa','P1g4-7x3f-si2a',{
     dialect:'mssql',
     port: "1433"
 })
+
+
+
 //conexão estabelecida ou não 
 sequelize.authenticate().then(function(){
     console.log("conexão estabelecida!")
 }).catch(function(erro){
     console.log("conexão falha! "+erro);
 });
+
+
 
 
 sequelize.query('EXEC BuscarUsuario @id=:id, @Nome=:Nome, @NomeDaMae=:NomeDaMae',
@@ -31,3 +36,6 @@ sequelize.query('EXEC BuscarUsuario @id=:id, @Nome=:Nome, @NomeDaMae=:NomeDaMae'
         console.log(data);
         
     }}).catch(function(err){console.log(err)});
+
+
+    
